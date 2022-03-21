@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Cosmetics from './Component/Cosmetics/Cosmetics';
+import Shoes from './Component/Shoes/Shoes';
+import { add } from './Utilities/Utilities';
 
 function App() {
+  const first = 20;
+  const second = 40;
+  const result = add(first,second)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Cosmetics result = {result}></Cosmetics>
+      <Shoes></Shoes>
     </div>
   );
 }
