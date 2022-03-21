@@ -9,7 +9,6 @@ const Cosmetics = (props) => {
         .then(res => res.json())
         .then(data => setCosmetics(data))
     },[])
-    console.log(cosmetics)
     return (
         <div>
             <h1>Welcome to my cosmetics store</h1>
